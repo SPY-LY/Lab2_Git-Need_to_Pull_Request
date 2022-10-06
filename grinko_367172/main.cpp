@@ -2,6 +2,8 @@
 
 int Plus(int a, int b);
 
+int Minus(int a, int b);
+
 int main() {
     std::cout << "Hello, this is SimpleCalc!" << std::endl;
     return 0;
@@ -9,4 +11,8 @@ int main() {
 
 int Plus(int a, int b) {
     return a + b;
+}
+
+int Minus(int a, int b) {
+    return a - b;
 }
