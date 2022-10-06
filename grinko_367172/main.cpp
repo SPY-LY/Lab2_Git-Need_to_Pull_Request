@@ -1,3 +1,6 @@
-//
-// Created by Stacia on 06.10.2022.
-//
+#include <iostream>
+
+int main() {
+    std::cout << "Hello, this is SimpleCalc!" << std::endl;
+    return 0;
+}
