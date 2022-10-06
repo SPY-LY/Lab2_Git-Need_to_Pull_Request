@@ -6,6 +6,8 @@ int Minus(int a, int b);
 
 int Multiplication(int a, int b);
 
+int Division(int a, int b);
+
 int main() {
     std::cout << "Hello, this is SimpleCalc!" << std::endl;
     int a;
@@ -19,6 +21,8 @@ int main() {
         std::cout << Minus(a, b);
     if (sign == "*")
         std::cout << Multiplication(a, b);
+    if (sign == "/")
+        std::cout << Division(a, b);
     return 0;
 }
 
@@ -32,4 +36,8 @@ int Minus(int a, int b) {
 
 int Multiplication(int a, int b) {
     return a * b;
+}
+
+int Division(int a, int b) {
+    return a / b;
 }
