@@ -5,11 +5,16 @@ int Plus(int a, int b);
 int Minus(int a, int b);
 
 int main() {
+    std::cout << "Hello, this is SimpleCalc!" << std::endl;
     int a;
     std::string sign;
     int b;
     std::cin >> a >> sign >> b;
-    std::cout << "Hello, this is SimpleCalc!" << std::endl;
+    std::cout << a << " " << sign << " " << b << " = ";
+    if (sign == "+")
+        std::cout << Plus(a, b);
+    if (sign == "-")
+        std::cout << Minus(a, b);
     return 0;
 }
 
@@ -20,4 +25,3 @@ int Plus(int a, int b) {
 int Minus(int a, int b) {
     return a - b;
 }
-
